@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hust_65_years_old</title>
+    <link rel="shortcut icon" href="../img/Heart.png">
+    <link rel="stylesheet" href="present.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="welcome.css"> 
+    <script src="jquery.js"></script>
+  </head>
+
+  <body>
+    <div id="main" class="main" >
+    <div id="Welcome" class="Welcome">
+      <div class="string">
+        15.10.2021
+      </div>
+
+       <!-- heart -->
+       <div id="big-heart" class="big-heart" >
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+
+      <div class="claim">
+        <p>👋Hi!! A beautiful day 🔥</p>
+        <h4>Click heart</h4>
+      </div>
+
+    </div>
+   
+      <div class="parent" id="parent">
+        <section id="above-fold" class="above-fold">
+          <div class="wrap-present">
+            <div class="present-box" id="present">
+              <div class="present">
+                <div class="img-wrap" id="present-image"></div>
+              </div>
+              <div class="side front"></div>
+              <div class="side back"></div>
+              <div class="side left"></div>
+              <div class="side right"></div>
+              <div class="side top">
+                <span class="to">
+                  <span class="name" id="nametag"> </span>
+                </span>
+              </div>
+              <div class="side bottom"></div>
+            </div>
+          </div>
+          <p class="info-text">Click to open</p>
+        </section>
+  
+        <div id="card">
+            <h4 class="title-card">💘little love💘</h4>
+            <img
+              src="1BK.png"
+              class="honey"
+            />
+            <h4 class="content-card">
+              💘
+            </h4>
+        </div> 
+
+         <!-- letter -->
+        <div id= "right-lt" class="right-lt">
+          <div id="center">
+            <div id="letter-top"></div>
+            <div id="letter"></div>
+            <div id="letter-inside">
+              <h1><em>HUST&#160</em>is the<br><em>youth&#160</em>of&#160<em>my life</em></h1>
+            </div>
+          <div id ='letter-top-triangle'></div>
+          <div id ='letter-top-triangle2'></div>
+          </div>
+    
+          <div >
+            <div class='heart one'></div>
+            <div class='heart two'></div>
+            <div class='heart three'></div>
+            <div class='heart four'></div>
+            <div class='heart five'></div>
+            <div class='heart six'></div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="music">
+        <iframe width="100px" height="0px" scrolling="no" frameborder="no" allow="autoplay" src="Anh Chang SVBK.mp3"></iframe>
+      </div>
+    </div>
+  </body>
+
+  <script src="config.js"></script>
+  <script src="present.js"></script>
+  <script src="phao.js"></script>
+  <script type="text/javascript">
+    var bgBegin = 82;
+    var bgEnd = 61;
+    var bgTetId = 31;
+    var bgTetUrl = '/banner/';
+    document.body.style.backgroundImage = 'url(' + bgTetUrl + bgTetId + '.jpg)';
+    document.body.style.backgroundAttachment = 'fixed';
+    document.body.style.backgroundSize = 'cover';
+    setInterval(function(){
+      if (bgTetId == bgEnd) bgTetId = bgBegin;
+      document.body.style.backgroundImage = 'url(' + bgTetUrl + bgTetId + '.jpg)';
+      document.body.style.backgroundAttachment = 'fixed';
+      document.body.style.backgroundSize = 'cover';
+      bgTetId++;
+    }, 15000);
+  </script>
+
+</html>

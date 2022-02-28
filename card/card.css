@@ -1,0 +1,251 @@
+
+.p-height{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+.parent{
+    z-index: 0;
+}
+  
+.above-fold{
+    opacity: 0;
+    background-image: url(../img/Bg_BK.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.above-fold-show{
+    opacity: 1 !important;
+    transition: all 1s;
+    z-index: 0; 
+}
+
+/* card    */
+#card {
+    margin: 8%;
+    position: absolute;
+    height: auto;
+    width: 350px;
+    border-radius: 10px;
+    background-color: white;
+    background-image: url("https://image.freepik.com/free-vector/open-gift-box-with-heart-shape-confetti-burst-explosion-3d-valentines-day-romantic-gift_165143-438.jpg");
+    background-size: 50vh, 70vh;
+    box-shadow: 0px 0px 20px red;
+    transform: rotate(5deg);
+    top: 0px;
+    opacity: 0;
+    left: 50%;
+    z-index: 2;
+}
+
+.honey {
+    margin: auto;
+    padding: 5%;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 red;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+h4 {
+    text-align: center;
+    -webkit-text-fill-color: rgba(0, 200, 200, 0.1);
+    -webkit-background-clip: text;
+    background-image: url("https://i.pinimg.com/originals/20/21/7f/20217f7fa2c9701b8128d8fb153a4db9.gif");
+    font-family: 'Allura', cursive;
+    padding: -2%;
+    font-size: 19px;
+    overflow: hidden;
+}
+
+.card-show{
+    opacity: 1 !important;
+    left: 0px !important;
+    transition: all 1s;
+}
+
+/* letter */
+@import url(https://fonts.googleapis.com/css?family=Loved+by+the+King);
+
+.right-lt {
+    position: absolute;
+    opacity: 0;
+    left: 30%;
+    top: 50%;
+}
+
+#center {
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+h1 {
+  font-family: 'Loved by the King', cursive;
+  text-align: center; 
+  font-size: 2em;
+  color: white;
+}
+
+em {
+  color: #E72650;
+}
+
+#letter{
+  background-color: #f2f2f2;
+  width: 300px;
+  height: 200px;
+}
+
+#letter-top {
+  position: absolute;
+  background-color: #dbdbdb;
+  width: 210px;
+  height: 215px;
+  top: -107px;
+  left: 45px;
+  border-top-left-radius: 20px;
+  transform: scale(1, .5) rotate(45deg);
+  z-index:1;
+}
+
+#letter-top-triangle {
+  position: absolute;
+  top: -12px;
+  width: 0;
+  height: 0;
+  left: 130px;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 180px solid #f2f2f2;
+  transform: rotate(-90deg);
+  z-index:3;
+}
+
+#letter-top-triangle2 {
+  position: absolute;
+  top: -5px;
+  width: 0;
+  height: 0;
+  left: 12px;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 180px solid #f2f2f2;
+  transform: rotate(90deg);
+  z-index:3;
+}
+
+#letter-inside {
+  background: black;
+  top: -95px;
+  height: 170px;
+  width: 250px;
+  left: 20px;
+  box-shadow: 
+    2px -2px 2px rgba(0, 0, 0, 0.1),
+    -2px 2px 2px rgba(0, 0, 0, 0.1),
+    4px -4px 2px rgba(0, 0, 0, 0.1),
+    -4px -4px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  transform: rotate(-8deg);
+  z-index:2;
+}
+
+.right-lt .heart {
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+.right-lt .heart:before,
+.right-lt .heart:after {
+  position: absolute;
+  content: "";
+  left: 18px;
+  top: 0px;
+  width: 18px;
+  height: 30px;
+  background: #E72650;
+  border-radius: 30px 30px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.right-lt .heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+}
+
+.one {
+  transform: scale(0.8);
+  opacity: 0.6;
+  animation: up 15s linear infinite, side 6s ease-in-out infinite alternate;
+}
+
+.two {
+  transform: scale(0.6);
+  opacity: 0.9;
+  animation: up 25s linear infinite, side 5s ease-in-out infinite alternate;
+}
+
+.three {
+  transform: scale(0.8);
+  opacity: 0.8;
+  animation: up 20s linear infinite, side 4s ease-in-out infinite alternate;
+}
+
+.four {
+  transform: scale(0.7);
+  opacity: 0.9;
+  animation: up 18s linear infinite, side 2s ease-in-out infinite alternate;
+}
+
+.five {
+  transform: scale(0.6);
+  opacity: 0.3; 
+  animation: up 7s linear infinite, side 1s ease-in-out infinite alternate;
+}
+
+.six {
+  opacity: 0.8; 
+  animation: up 10s linear infinite, side 7s ease-in-out infinite alternate;
+}
+
+@keyframes up {     
+  0% { 
+    top: 300px;
+  }
+  100% { 
+    top: -500px;
+  }
+}
+
+
+@keyframes side {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+.right-lt-show{
+    opacity: 1 !important;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transition: all 1s;
+}
+
+
+
